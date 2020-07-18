@@ -8,8 +8,8 @@ const methods = {
         const twiml = new MessagingResponse()
 
         // Add the message to it, and send it back to Twilio.
-        response.set('Content-Type', 'image/png')
-        response.send('images/okraproject.png')
+        //response.set('Content-Type', 'image/png')
+        //response.send('images/okraproject.png')
         twiml.message(message)
         response.set('Content-Type', 'text/xml')
         response.send(twiml.toString())
