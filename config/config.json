@@ -1,0 +1,16 @@
+{
+	"twilio": {
+		"accountSid": "AC5ce4d9151496901a3f4dd7a20e0b0556",
+		"authToken": "bf760ac677656b0d4436cf7e30dcd45f",
+		"phoneNumber": "+12056276365",
+		"allowedNumbers": [
+			"+17044503212"
+		],
+		"webhookUrl": "https://d036c4437aa8.ngrok.io",
+		"webhook_path": "/texteverything/message"
+	},
+
+	"express": {
+		"port": "1337"
+	}
+}
