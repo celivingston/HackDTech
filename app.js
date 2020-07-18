@@ -43,6 +43,10 @@ app.post(config.twilio.webhook_path, function(request, response) {
 
     plugins.handle(request.body, response);
   } else {
+    console.log(config.twilio.authToken)
+    console.log(twilioSignature)
+    console.log(config.twilio.webhookUrl)
+    console.log(validTwilioRequest)
     console.log('Received a potentially spoofed request - dropping silently.');
     response.sendStatus(403);
   }
