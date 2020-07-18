@@ -4,9 +4,9 @@
 		"allowedNumbers": [
 			"+17044503212", "+14126801046", "+19179790518"
 		],
-		"authToken": "bf760ac677656b0d4436cf7e30dcd45f",
+		"authToken": "",
 		"phoneNumber": "+12056276365",
-		"webhookUrl": "http://6983c69f0737.ngrok.io/texteverything/message",
+		"webhookUrl": "http://362bec54ac67.ngrok.io/texteverything/message",
 		"webhook_path": "/texteverything/message"
 	},
 
