@@ -2,7 +2,7 @@ const MessagingResponse = require('twilio').twiml.MessagingResponse
 const methods = {
     run: function(request, response) {
          // Strip the trigger word from the response.
-        const message = "Here are some ways to get involved:/n - Text 'volunteer' to learn about our upcoming events/n - Text 'petition' to learn about a recent petition and sign it/n - Text 'donate' to find out how you can financially support the Okra Project"
+        const message = "Here are some ways to get involved:/n - Text 'events' to learn about our upcoming events/n - Text 'petition' to learn about a recent petition and sign it/n - Text 'donate' to find out how you can financially support the Okra Project"
 
          // Create a new response object to send to Twilio.
         const twiml = new MessagingResponse()
