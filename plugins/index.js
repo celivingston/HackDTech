@@ -11,8 +11,11 @@ fs.readdir(normalPath, (err, files) => {
     throw err;
   }
 
+
   files.forEach(element => {
     if (element != 'index.js') {
+        if (element!= '.DS_Store'){
+      console.log(element);
       const pluginName = element.replace('.js', '');
       plugins[pluginName] = require('./' + element);
       plugins[pluginName].meta.aliases.forEach(alias => {
@@ -23,6 +26,7 @@ fs.readdir(normalPath, (err, files) => {
           pluginName
         ].meta.aliases.join(', ')}`
       );
+      }
     }
   });
 });
