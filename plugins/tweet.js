@@ -31,8 +31,7 @@ var methods = {
             response.end(twiml.toString())
             return
         }
-        //console.log(message)
-        //console.log(client)
+        console.log(params)
         client.post('statuses/update', params).then(function(tweet){
             twiml.message("Tweet Sent!")
             response.end(twiml.toString())
