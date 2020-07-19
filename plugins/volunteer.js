@@ -12,7 +12,7 @@ const methods = {
         }
         if (request.Body.split(' ').slice(0,1).join('').toLowerCase() == "vname"){
             var name = request.Body.split(' ').slice(1).join(' ')
-            var message = " ".concat(name, ' has signed up to volunteer!\n\n We are happy to have you. We will reach out to your phone number to set up a time to meet. \n\n Text actions for other ways to get involved. Text help for a full list of keywords.')
+            var message = " ".concat(name, ' has signed up to volunteer!\n\n We are happy to have you. We will reach out to your phone number to set up a time to meet. \n\n Text actions for other ways to get involved. Text hi for a full list of keywords.')
         }
 
 
