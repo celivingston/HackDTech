@@ -6,7 +6,7 @@ const methods = {
         if (request.Body.toLowerCase() == "aid") {
             var message = "If you need immediate monetary relief or assistance, please text your request, starting with the word apply."
         } else {
-            var message = "Thanks! We got your application and will reach out to your phone number as soon as possible."
+            var message = "Thanks! We got your application and will reach out to your phone number as soon as possible.\n\n Text 'actions' to see what else you can do for the Okra Project. Text 'hi' to get a list of all keywords."
         }
 
          // Create a new response object to send to Twilio.
