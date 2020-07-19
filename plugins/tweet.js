@@ -21,7 +21,8 @@ var methods = {
             consumer_key: config.twitter.consumer_key,
             consumer_secret: config.twitter.consumer_secret,
             access_token_key: config.twitter.access_token_key,
-            access_token_secret: config.twitter.access_token_secret
+            access_token_secret: config.twitter.access_token_secret,
+            bearer_token: config.twitter.bearer_token
         })
         var params = {status: message}
         const twiml = new MessagingResponse()
@@ -30,6 +31,7 @@ var methods = {
             response.end(twiml.toString())
             return
         }
+        console.log(params)
         client.post('statuses/update', params).then(function(tweet){
             twiml.message("Tweet Sent!")
             response.end(twiml.toString())
